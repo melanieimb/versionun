@@ -28,19 +28,6 @@ fieldset dt {color:var(--aaa); font-weight:bold; text-transform:uppercase; font-
     display: none!important;}
 .cachecache:first-child, .cachecache:nth-child(4) {display:none!important;}
 .cachecache2:first-child, .cachecache2:nth-child(5) {display:none!important;}
-.proimgcontent img {
-  margin: auto;
-  margin-bottom:-15px;
-  display: flex;
-  margin-top:5px;
-  height:50px; 
-  width:50px; 
-  padding:5px; 
-  background:var(--lighter); 
-  object-fit: cover;
-  object-position: center;
-  border:var(--border); 
-  border-radius:50%;}
 .post_userinfo::-webkit-scrollbar {
   display: none;
 }
