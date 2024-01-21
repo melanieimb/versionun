@@ -2417,9 +2417,7 @@ blockquote#blank_quote cite {}
  * nth-child(n+4) supprime toutes les cases après la quatrième */
 .profil_contact form div:nth-child(n+4) {display: none}
 
-.profil_content {
-    height: 370px;
-    overflow: auto;}
+
 .profil_content img {
     max-width:100%;}
 
@@ -2457,9 +2455,6 @@ font-size:0.55rem;}
   border:var(--border);
   padding:10px;
   border-radius:10px;}
-.profil_infos {
-  grid-column: 2;
-  grid-row: 1/5;}
 .profil_imgg {
   grid-column: 3;
   grid-row: 3/5;}
