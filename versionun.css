@@ -24,10 +24,6 @@ linae {
 
 fieldset dt {color:var(--aaa); font-weight:bold; text-transform:uppercase; font-size:var(--sizu1); letter-spacing:1px;}
 
-.cacheca3:first-child, .cacheca3:nth-child(3), .cacheca3:nth-child(4), .cacheca3:nth-child(5), .cacheca3:nth-child(6), .cacheca3:nth-child(7), .cacheca3:nth-child(8), .cacheca3:nth-child(9), .cacheca3:nth-child(10), .cacheca3:nth-child(11), .cacheca3:nth-child(12), .cacheca3:nth-child(13), .cacheca3:nth-child(14), .cacheca3:nth-child(15), .cacheca3:nth-child(16), .cacheca3:nth-child(17), .cacheca3:nth-child(18), .cacheca3:nth-child(19), .cacheca3:nth-child(20), .cacheca3:nth-child(21), .cacheca3:nth-child(22), .cacheca3:nth-child(23), .cacheca3:nth-child(24), .cacheca3:nth-child(25) {
-    display: none!important;}
-.cachecache:first-child, .cachecache:nth-child(4) {display:none!important;}
-.cachecache2:first-child, .cachecache2:nth-child(5) {display:none!important;}
 .post_userinfo::-webkit-scrollbar {
   display: none;
 }
