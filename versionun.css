@@ -35,13 +35,7 @@ fieldset dt {color:var(--aaa); font-weight:bold; text-transform:uppercase; font-
   display: none;
 }
 .post_avatar img {
-  opacity:0.8;
-  border-radius:5px;transition: 0.7s;
-}
-.post_avatar img:hover {
-  opacity:1;
   border-radius:5px;
-  transition: 0.7s;
 }
 
 .annoncegrid {
