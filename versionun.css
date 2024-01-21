@@ -2100,9 +2100,11 @@ font-size:0.55rem;}
 /* Supression de la flèche peu esthétique*/
 .tooltipster-arrow {display: none !important}
 
-.tooltipster-default {}
+.tooltipster-default {border-radius:10px;}
 
 .tooltipster-content {
+  border-radius:10px;
+  border:var(--border);
   background:var(--lighter);
   color:var(--text);
 }
@@ -2127,8 +2129,11 @@ font-size:0.55rem;}
 }
 
 .preview_pseudo, .preview_pseudo strong {
-    font-size: 1rem !important;
+ font-size: 1rem !important;
   text-transform:uppercase;
+  display: block;
+ font-family: var(--font1);
+ text-align: center;
 }
 
 .preview_contacts {
