@@ -2090,30 +2090,6 @@ font-size:0.55rem;}
   margin:5px;}
 .profillink {display: inline-block;}
 .profillink img {height:15px; margin:4px;}
-.pageprofilpseudo span[style*="#8FB572"], .pageprofilpseudo span[style*="#5CACC9"], .pageprofilpseudo span[style*="#DB9874"] {
-  font-family:var(--font1);
-  text-align:center;
-  font-size:var(--sizu5);
-  display: block;
-  padding:10px;
-  border-radius:10px;
-  color:white!important;
-  width:auto;}
-.pageprofilpseudo {
-  font-family:var(--font1);
-  text-align:center;
-  font-size:var(--sizu5);
-  background:var(--light);
-  border:var(--border);
-  text-align:center;
-  line-height:40px;
-  display: block;
-  border-radius:10px;
-  color:var(--button)!important;
-  width:auto;}
-.pageprofilpseudo span[style*="#8FB572"] {background:#8FB572;}
-.pageprofilpseudo span[style*="#5CACC9"] {background:#5CACC9;}
-.pageprofilpseudo span[style*="#DB9874"] {background:#DB9874;}
        
 /*** ------------------------------- ***/
 /*** PROFILS SIMPLIFIÉS DES TAGS ---- ***/
