@@ -1350,6 +1350,11 @@ img.forum-img {
   margin-right:20px;
   justify-content: center;
 }
+.forum_messss {
+  font-size: 0.55rem!important; 
+  letter-spacing:1px; 
+  text-transform:uppercase;
+}
 
 .bottom_row {
   border-radius: 0 0 5px 5px;
