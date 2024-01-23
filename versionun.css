@@ -133,7 +133,7 @@ body {
  * comme les encadrés d'options, de rappel, etc... */
 .panel {
   color:var(--text);
-    background: var(--lighter) !important;
+    background: var(--lighter);
     border: var(--border);
     border-radius: 5px;
     font-size:var(--sizu2)!important;
