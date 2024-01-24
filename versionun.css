@@ -20,6 +20,7 @@
 .qeeltitre {grid-row:1; grid-column:1/4;line-height:20px; padding-top:10px;}
 .qeelnewest {
   padding:5px!important;}
+#last_user {width: 170px;}
 .qeelnewest, .qeeltotal, .qeelliens, .qeelonline, .qeelconnecte, .qeelcredit {
   background:var(--lighter); 
   border:var(--border); 
