@@ -14,7 +14,7 @@
 .qeelgrid {
   display:grid; 
   grid-template-rows: 40px 60px 30px 40px 33px auto;
-  grid-template-columns:250px 122px 250px; 
+  grid-template-columns:255px 122px 255px; 
   grid-gap: 8px; 
   width:650px;}
 .qeeltitre {grid-row:1; grid-column:1/4;line-height:20px; padding-top:10px;}
