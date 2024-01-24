@@ -2026,11 +2026,13 @@ font-size:0.55rem;}
   grid-template-rows:60px 100px 45px auto;
   gap: 8px;}
 .containerenligne {
+  transition:0.7s;
   text-align:center;
   grid-row:2/5; 
   opacity:0;
   grid-column:1}
 .containerenligne:hover {
+  transition:0.7s;
   text-align:center;
   opacity:0.8;}
 .containerenligne .containeronline {
