@@ -2026,8 +2026,15 @@ font-size:0.55rem;}
   gap: 8px;}
 .containerenligne {
   text-align:center;
-  grid-row:5; 
+  grid-row:2/5; 
+  opacity:0;
   grid-column:1}
+.containerenligne:hover {
+  text-align:center;
+  opacity:0.8;}
+.containerenligne .containeronline {
+  position: relative;
+  top: 40%;}
 .pageprofilpseudo {
   grid-column:1;
   grid-row:1;}
