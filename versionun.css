@@ -22,6 +22,7 @@
   padding:5px!important;}
 #last_user {width: 170px;text-align: left;}
 .qeelliens {
+  padding-top:1px!important;
   padding:10px; 
   border-radius:10px; 
   font-size:var(--sizu2);}
