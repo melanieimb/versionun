@@ -21,7 +21,11 @@
 .qeelnewest {
   padding:5px!important;}
 #last_user {width: 170px;text-align: left;}
-.qeelnewest, .qeeltotal, .qeelliens, .qeelonline, .qeelconnecte, .qeelcredit {
+.qeelliens {
+  padding:10px; 
+  border-radius:10px; 
+  font-size:var(--sizu2);}
+.qeelnewest, .qeeltotal, .qeelonline, .qeelconnecte, .qeelcredit {
   background:var(--lighter); 
   border:var(--border); 
   padding:10px; 
