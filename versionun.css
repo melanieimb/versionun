@@ -715,8 +715,8 @@ a#fa_menu {display: none !important}
     background: var(--grey);
     border-radius: 5px;}
 #fa_toolbar #fa_right #notif_list {background:var(--light);}
-#fa_toolbar #fa_right #notif_list li .contentText {width: 19em;}
-#fa_toolbar #fa_right #notif_list li .content {width:23em}
+#fa_toolbar #fa_right #notif_list li .contentText {width: 19em; font-size:var(--sizu2);}
+#fa_toolbar #fa_right #notif_list li .content {width:20em}
 
 #fa_toolbar #fa_right #notif_list li .contentText a {
   text-decoration:none!important; color:var(--link)!important; background:var(--light);}
