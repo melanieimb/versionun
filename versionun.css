@@ -282,7 +282,7 @@ p {font-size: var(--sizu2)}
   padding:10px;
   color:var(--text);
   width: 100%; /*ne pas retirer*/
-  font-size: var(--sizu4)!important;
+  font-size: var(--sizu2);
   background:var(--lighter)
 }
 
