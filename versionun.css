@@ -668,15 +668,18 @@ img.forum-img {
 }
 
 .forum_lastpost-avatar img {
-    border-radius: 50%;
+  border-radius: 50%;
   padding:5px;
   background:var(--lighter);
   border:var(--border);
-    object-fit: cover;
-    object-position: center;
+  object-fit: cover;
+  object-position: center;
   height:60px;
   width:60px;
+  transition:0.5s;
 }
+.forum_lastpost-avatar img:hover {border-radius:20px; transition:0.5s;}
+
 .forum-img {
   border-radius: 5px;
   height:10px;
