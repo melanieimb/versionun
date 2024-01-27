@@ -41,7 +41,8 @@ fieldset.fields1 dt {
 /*** ------------------------------- ***/
 /*** FOND DE LA PAGE --------------- ***/
 body {
-  background: var(--pink);
+  background-color:var(--pink);
+  background-image: var(--pattern);
   font-family: 'Open Sans';
   color:var(--text);
 }
