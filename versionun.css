@@ -2367,51 +2367,6 @@ div#tabs li:nth-child(5) { display: none;}
 .blog_author {flex-grow: 100;}
 
 
-/*** ------------------------------- ***/
-/*** COMMENTAIRES D'UN BLOG -------- ***/
-
-
-.blog_comment {
-  text-align:justify;
-  border: var(--border);
-  width:400px;
-  padding: 10px;
-  border-radius: 0px 0px 5px 5px;
-  margin: 0px auto 10px;
-}
-
-.comment_avatar {margin-right: 10px;float: right;}
-
-.comment_avatar img {
-    object-fit: cover;
-    object-position: center;
-    border-radius: 100%;
-    width: 40px !important;
-    height: 40px !important;
-    margin:0!important;}
-
-.comment_details {
-    height: 40px;
-    display: flex;
-    justify-content: space-between;}
-
-.comment_details .left {flex-grow: 100;}
-
-.comment_content {margin: 10px 31px 10px 30px;}
-
-.msgposter {
-  height:60px;
-  margin: 0px auto 0px;
-  width:400px;
-  border:var(--border);
-  border-radius:10px 10px 0px 0px;
-  padding:10px;
-  background:var(--light);
-}
-.commentauthor {text-align:center; font-size:13px; text-transform:uppercase;}
-.commentdate {text-align:right; color:var(--textff); text-transform:uppercase; font-size:var(--sizu1);}
-.msgedit { margin-top:5px; height:20px; text-align:right;}
-
 /****** ------------------------------------------------------------------------------
  ****** POUBELLE DE FORUMACTIF ------------------------------------------------------- 
  ****** Les éléments dont on veut plus ----------------------------------------------- ******/
