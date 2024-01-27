@@ -45,6 +45,8 @@ body {
   background-image: var(--pattern);
   font-family: 'Open Sans';
   color:var(--text);
+  background-repeat: repeat!important;
+  background-attachment: fixed!important;
 }
 
 
