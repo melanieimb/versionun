@@ -1346,7 +1346,11 @@ font-size:0.55rem;}
   padding-left:10px;
   padding-right:10px;
   border-radius:5px;
+  transition:0.5s;
   margin:5px;}
+.containeronline:hover {
+  background:var(--buttonho); 
+  transition:0.5s;}
 .profillink {display: inline-block;}
 .profillink img {height:15px; margin:4px;}
        
