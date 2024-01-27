@@ -1,0 +1,67 @@
+/****** ------------------------------------------------------------------------------
+ ****** BLOGS ------------------------------------------------------------------------ ******/
+
+/*** ------------------------------- ***/
+/*** COMMENTAIRES D'UN BLOG -------- ***/
+
+.commentgrid {
+  grid-template-columns: 60px auto 100px;
+  display:grid; 
+  width:400px; 
+  padding:10px;
+  margin:10px;
+  align-items:center; 
+  border:var(--border);
+  grid-gap:5px;}
+
+.blog_comment {
+  text-align:justify;
+  width:305px;}
+
+.comment_avatar {}
+
+.comment_avatar img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;}
+
+.comment_details {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;}
+
+.comment_details .left {flex-grow: 100;}
+
+.comment_content {margin:0!important;}
+
+.commentauthor .msgauthor {
+  text-align: left;
+  font-size: var(--sizu6)!important;}
+
+.msgposter {
+  height:60px;
+  margin: 0px auto 0px;
+  width:400px;
+  border:var(--border);
+  border-radius:10px 10px 0px 0px;
+  padding:10px;
+  background:var(--light);
+}
+.commentauthor {text-align:left; font-size:19px; text-transform:uppercase;}
+.commentdate {text-align:left; color:var(--textff); text-transform:uppercase; font-size:var(--sizu1);}
+.msgedit {text-align:right;}
+
+.smsdebutgrid {
+  display:grid; 
+  grid-gap:10px;
+  grid-template-columns: 70px auto;
+  align-items: center;}
+.smsdemarre {grid-column:2; text-align:left;}
+.imgdebut {grid-column:1}
+.imgdebut img {
+  object-fit: cover;
+  object-position: center;
+  border-radius:50%;
+  height:70px; width:70px; padding:5px; border:var(--border); background:var(--lighter);}
