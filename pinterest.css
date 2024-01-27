@@ -1,0 +1,24 @@
+/*pinterest ou moodboard*/
+.instapost {
+  border-radius:5px;
+  background:var(--light); 
+  border:var(--border);
+  width:400px;}
+
+.pingridtop {display:grid; align-items:center; grid-template-columns: 50px auto 215px 40px 40px 40px;}
+.pinicone1 {grid-column:1; font-size:var(--sizu5);}
+.pinaccueil {grid-column:2;}
+.pinrecherche {grid-column:3; background:var(--lighter); padding:10px; border-radius:50px; text-align:left; border:var(--border);}
+.pinicone2 {grid-column:4; font-size:var(--sizu5);}
+.pinicone3 {grid-column:5; font-size:var(--sizu5);}
+.pininitiale {grid-column:6; background:var(--lighter); border-radius:50%; padding:10px; border:var(--border);}
+
+.pingridimage {display:grid; grid-gap:10px; max-height:550px; overflow:auto;}
+.pingridimage::-webkit-scrollbar {display:none;}
+.pinimage {width:100%; border-radius:20px; margin-bottom:10px; transition:0.5s;}
+.pinimage:hover {opacity:0.5; transition:0.5s;}
+.pincolonne1 img, .pincolonne2 img, .pincolonne3 img {width:100%; border-radius:20px; margin-bottom:10px; transition:0.5s;}
+.pincolonne1 img:hover, .pincolonne2 img:hover, .pincolonne3 img:hover {opacity:0.5; transition:0.5s;}
+.pincolonne1 {grid-column:1}
+.pincolonne2 {grid-column:2}
+.pincolonne3 {grid-column:3;}
