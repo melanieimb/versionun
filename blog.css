@@ -65,3 +65,10 @@
   object-position: center;
   border-radius:50%;
   height:70px; width:70px; padding:5px; border:var(--border); background:var(--lighter);}
+
+/*changement de police des messages dans les blogs*/
+.commentauthor .msgauthor {
+  padding-top:7px;
+  font-family:var(--font1);
+  text-transform:none;
+  font-size:var(--sizu5);}
