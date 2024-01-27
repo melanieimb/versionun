@@ -1318,7 +1318,8 @@ img.forum-img {
 
 .forum_lastpost-avatar {
   margin-right:10px;
-  width:70px;
+  width:100px;
+  text-align:center;
 }
 
 .forum_lastpost-avatar img {
