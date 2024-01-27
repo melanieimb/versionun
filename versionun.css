@@ -14,7 +14,7 @@ dd.lastpost span {display: contents;}
 dd.searchsujet {width:17%}
 
 
-.postbody .content {text-align:justify; font-size:var(--sizu2);}
+.postbody .content {text-align:justify;}
 
 a:link {color:var(--link)}
 a:visited {color:var(--link)}
