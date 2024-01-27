@@ -49,23 +49,37 @@
   padding:10px;
   background:var(--light);
 }
-.commentauthor {text-align:left; font-size:19px; text-transform:uppercase;}
-.commentdate {text-align:left; color:var(--textff); text-transform:uppercase; font-size:var(--sizu1);}
-.msgedit {text-align:right;}
+.commentauthor {
+  text-align:left; 
+  font-size:19px; 
+  text-transform:uppercase;}
+.commentdate {
+  text-align:left; 
+  color:var(--textff); 
+  text-transform:uppercase; 
+  font-size:var(--sizu1);}
+.msgedit {
+  text-align:right;}
 
 .smsdebutgrid {
   display:grid; 
   grid-gap:10px;
   grid-template-columns: 70px auto 70px;
   align-items: center;}
-.smsdemarre {grid-column:2; text-align:left;}
+.smsdemarre {
+  grid-column:2; 
+  text-align:left;}
 .imgdebut {grid-column:1}
 .imgfin {grid-column:3}
 .imgfin img, .imgdebut img {
   object-fit: cover;
   object-position: center;
   border-radius:50%;
-  height:70px; width:70px; padding:5px; border:var(--border); background:var(--lighter);}
+  height:60px; 
+  width:60px; 
+  padding:5px; 
+  border:var(--border); 
+  background:var(--lighter);}
 
 /*changement de police des messages dans les blogs*/
 .commentauthor .msgauthor {
