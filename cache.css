@@ -1,0 +1,20 @@
+/*                                                                     LES CHOSES QUE JE CACHE*/
+
+/*cacher profil sous avatar*/
+.cacheca7 {display:none}
+/*montrer profil sous avatar*/
+.cacheca7:nth-child(3), .cacheca7:nth-child(4), .cacheca7:nth-child(5), .cacheca7:nth-child(6), .cacheca7:nth-child(7), .cacheca7:nth-child(8), .cacheca7:nth-child(9) {display:block!important;}
+/*cacher profil en dessous de l'avatar*/
+.cacheca6:nth-child(2), .cacheca6:nth-child(3), .cacheca6:nth-child(4), .cacheca6:nth-child(5), .cacheca6:nth-child(6), .cacheca6:nth-child(7), .cacheca6:nth-child(8) {display:none;}
+
+/*CACHER LE GIF POUR LE TEXTE AU MILEU ET LE BEAUTYSHOT */
+.cachecache:first-child, .cachecache:nth-child(2), .cachecache:nth-child(13) {display:none!important;}
+.cachecache2:first-child, .cachecache2:nth-child(2), .cachecache2:nth-child(14) {display:none!important;}
+
+/* CACHER TEXTE POUR LE BEAUTYSHOT */
+.cacheca4 {display:none}
+.cacheca4:first-child {display:block!important}
+
+/* CACHER LE TEXTE POUR LE GIF A DROITE*/
+.cacheca3 {display:none;}
+.cacheca3:nth-child(5) {display:block!important;}
