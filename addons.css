@@ -1,0 +1,660 @@
+/*** ------------------------------- ***/
+/*** SWITCHEROO - Par Monomer ------ ***/
+/*** Gestionnaire de multicompte --- ***/
+
+:root {
+  --gap-size: 16px;
+  --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.43, 0.09, 0.38, 2.56);
+}
+
+/* BARRE SWITCHEROO --- */
+.switcheroo {}
+
+.switcheroo[position="static"] {
+  position: relative;
+}
+
+/* si barre EN HAUT */
+.switcheroo[position="top"] {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  z-index: 100;
+}
+
+/* si barre EN BAS */
+.switcheroo[position="bottom"] {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+/* si barre A L'HORIZONRAL */
+.switcheroo[direction="horizontal"] {
+  width: 100%;
+}
+
+/* si barre A LA VERTICAL */
+.switcheroo[direction="vertical"] {
+}
+
+/* BARRE SIDEBAR --- */
+.sidebar {}
+ 
+.sidebar[position="static"] {
+  position: relative;
+}
+ 
+/* si barre EN HAUT */
+.sidebar[position="top"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+ 
+/* si barre EN BAS */
+.sidebar[position="bottom"] {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+ 
+/* si barre A L'HORIZONRAL */
+.sidebar[direction="horizontal"] {
+  width: 100%;
+}
+ 
+/* si barre A LA VERTICAL */
+.sidebar[direction="vertical"] {
+}
+
+/* Positionnement des ronds */
+.switcheroo__squircles {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: var(--gap-size);
+  gap: var(--gap-size);
+}
+.switcheroo[direction="horizontal"] .switcheroo__squircles {
+  flex-direction: row;
+}
+.switcheroo[direction="vertical"] .switcheroo__squircles {
+  flex-direction: column;
+}
+
+/* BARRE --- */
+.switcheroo {
+  color: var(--color-text);
+  background: var(-backback);
+  border: none;
+  font-size: 16px;
+}
+
+
+/* AFFICHAGE DES COMPTES ---*/
+
+/* Rond */
+.switcheroo__squircle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--grey);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-radius 128ms var(--ease);
+}
+
+/* Rond au survol */
+.switcheroo__squircle:hover {
+  border-radius: 6px;
+  background: var(--greyer)
+}
+
+/* Contenenur de l'avatar */
+.switcheroo__avatar {}
+
+
+/* Image de l'avatar */
+.switcheroo__avatar img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transition: border-radius 128ms var(--ease);
+  position: relative;
+}
+
+/* Image de l'avatar au survol */
+.switcheroo__avatar img:hover {
+  border-radius: 5px;
+}
+
+/* Avatar du compte connecté */
+.switcheroo__squircle.active, 
+.switcheroo__squircle.active img {
+  border-radius: 6px;
+  cursor: default;
+}
+
+
+/* Indicateur de l'avatar survolé */
+.switcheroo__squircle:before {
+  content: "";
+  display: block;
+  background: var(--grey);
+  border: var(--border);
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: -5px;
+  z-index: -1;
+  transform 128ms var(--ease), opacity 64ms var(--ease);
+}
+
+
+/* Indicateur du compte sélectionné/actif */
+.switcheroo__squircle.active:before {
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.switcheroo__squircle:hover:before {
+    border-radius: 8px;
+    opacity: 1;
+  transform 128ms var(--ease), opacity 64ms var(--ease);
+}
+
+
+/* Bouton de suppression */
+.switcheroo__delete {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -7px;
+  right: -7px;
+  border-radius: 50%;
+  background: var(--patink);
+  transform: scale(0);
+  opacity: 1;
+  transition: transform 128ms var(--ease), opacity 64ms var(--ease);
+  cursor: pointer;
+  color: var(--text);
+  font-size:11px;
+}
+.switcheroo__squircle:hover .switcheroo__delete {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+/* TOOLTIP - INFOBULLE DU PSEUDO ---*/
+
+/* Conteneur du pseudo */
+.switcheroo__popper {
+  background: var(--lighter);
+  padding: 0.68rem 1rem;
+  position: absolute;
+  width: -webkit-max-content;
+  width: max-content;
+  border-radius: 7px;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
+  pointer-events: none;
+  color: var(--text);
+  font-size:var(--sizu1)
+}
+
+/* Conteneur du pseudo: si vertical */
+.switcheroo[direction="vertical"] .switcheroo__popper {
+  left: 155%;
+  top: 50%;
+  transform-origin: left;
+  transform: translateY(-50%) scale(0.68);
+}
+/* Conteneur du pseudo : si horizontal */
+.switcheroo[direction="horizontal"] .switcheroo__popper {
+  top: 155%;
+  left: 50%;
+  transform-origin: top;
+  transform: translateX(-50%) scale(0.68);
+}
+
+/* Flèche tooltip */
+.switcheroo__popper:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: var(--lighter);
+  z-index: -1;
+}
+
+/* Flèche tooltip : si vertical */
+.switcheroo[direction="vertical"] .switcheroo__popper:before {
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Flèche tooltip : si horizontal */
+.switcheroo[direction="horizontal"] .switcheroo__popper:before {
+  left: 50%;
+  top: -2px;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+
+/* Positionnement tooltip au survol */
+.switcheroo[direction="vertical"] .switcheroo__squircle:hover .switcheroo__popper {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+.switcheroo[direction="horizontal"] .switcheroo__squircle:hover .switcheroo__popper {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+
+
+/* LOGO --- */
+.switcheroo__logo {
+  /* display: none */
+  /* à ajouter si vous voulez supprimer le logo*/
+}
+
+/* DIVIDER : barre de séparation --- */
+.switcheroo__divider {
+  /* display: none */
+  /* à ajouter si vous voulez supprimer le logo*/
+  
+  background: transparent;
+  border-radius: 3px;
+  transform: scale(0.8);
+}
+
+/* Divider : si vertical */
+.switcheroo[direction="vertical"] .switcheroo__divider {
+  width: 100%;
+  height: 20px;
+}
+
+/* Divider : si horizontal */
+.switcheroo[direction="horizontal"] .switcheroo__divider {
+  width: 2px;
+}
+
+
+/* AJOUTER UN COMPTE ---*/
+
+/* button : ajouter un compte */
+.switcheroo__squircle--button {
+  transition: border-radius 128ms var(--ease);
+  color: var(--text);
+}
+.switcheroo__squircle--button:hover {
+  color: var(--link);
+  font-weight: bold;
+}
+
+
+/* MODAL : FENETRE DE CONNEXION --- */
+
+/* Fond de l'afficage connexion */
+.monomer-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s opacity ease;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Boîte de connexion */
+.monomer-modal {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  width: 94%;
+  padding: 24px 20px;
+  transition: 0.2s opacity ease;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background: var(--grey);
+  border: var(--border);
+  color: var(--text);
+}
+
+/* Formulaire */
+.switcheroo__form {
+  padding: 48px;
+  background: var(--light);
+  border-radius: 5px;
+}
+
+/* Champs à remplir */
+.switcheroo__form-row {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+/* Nom du champs */
+.switcheroo__form-label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Zone de texte */
+.switcheroo__form-input {
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+  background: var(--light);
+  border: var(--border)!important;
+  border-bottom: 3px solid var(--greyer)!important;
+  color: var(--text);
+  cursor: text;
+}
+
+/* Bouton de connexion */
+.switcheroo__form-button {
+  border-radius: 8px;
+  padding: 4px 6px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  align-self: flex-end;
+  background: var(--light);
+  border: var(--border);
+  cursor: pointer;
+}
+
+.switcheroo__form-button:hover {
+  border: 1px solid transparent;
+  background: var(--text);
+  color: var(--light);
+}
+
+.monomer-modal.monomer-open, .monomer-overlay.monomer-open {
+  opacity: 1;
+}
+
+/* Fermer la boîte de connexion */
+.monomer-close {
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  outline: none;
+  background: var(--red);
+  border-radius: 50%;
+  padding: 0;
+}
+.monomer-close:hover {
+  background: var(--text);
+  font-weight: 700;
+}
+
+
+.sidebar {
+  position: fixed;
+  height:100px;
+    background: transparent;
+    inset: 0;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0px 0px 30px;
+    z-index: 999;
+}
+
+/*TOOLBAR*/
+/* Logo Forumactif : 
+ * ATTENTION, il est techniquement interdit de supprimer de logo de FA. 
+ * Techniquement. Faites-en donc ce que vous voulez. */
+#fa_left {display: none !important}
+
+/* Toute la toolbar */
+#fa_toolbar {
+  height:1px;
+    font-size: var(--sizu1) !important;
+    font-family: var(--font);
+    background: transparent !important;
+}
+
+
+/* Conteneur du lien de bienvenue et notification */
+#fa_right {
+  position: relative;
+    margin-top: 5px;
+    margin-right: 5px;
+    background: var(--lighter);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    display: flex !important;
+    align-items: center;
+    padding: 5px;
+    font-size: var(--sizu2)!important;
+}
+
+/* Liens contenus à droite */
+#fa_right a {
+    color: var(--link) !important;
+    font-weight: 600 !important;
+    margin-left: 0 !important;
+}
+
+/* Lien "Connexion" */
+#fa_right a.rightHeaderLink:first-child { margin-right: 10px;}
+
+/* Lien "S'enregistrer" */
+#fa_right a.rightHeaderLink:last-child {}
+
+/* Lien "Bienvenue (pseudo)" */
+#fa_welcome {display:none!important;}
+
+/* Lien "notification"*/
+#fa_notifications
+
+/* liens "bienvenue" et "notification" [AU CLIC] */
+a#fa_menu {display: none !important}
+#fa_right.welcome #fa_menu #fa_welcome,
+#fa_toolbar > #fa_right.notification > #fa_notifications {
+    background: var(--grey);
+    border-radius: 5px;}
+#fa_toolbar #fa_right #notif_list {background:var(--light);}
+#fa_toolbar #fa_right #notif_list li .contentText {width: 19em; font-size:var(--sizu2);}
+#fa_toolbar #fa_right #notif_list li .content {width:20em}
+
+#fa_toolbar #fa_right #notif_list li .contentText a {
+  text-decoration:none!important; color:var(--link)!important; background:var(--light);}
+
+#fa_toolbar #fa_right #notif_list li.see_all {text-align:center;}
+
+#fa_toolbar #fa_right #notif_list li {font-size:var(--sizu2); background:var(--light); color:var(--text);}
+
+#fa_toolbar #fa_right.notification #notif_list {width:275px;}
+
+/* Affichage du menu bienvenue [ET] liste des notification */
+ul#fa_menulist,
+ul#notif_list {
+    top: 30px!important;
+    border: var(--border) !important;
+    background: var(--light);
+    border-radius: 5px;
+    right: 0;
+    left: initial!important;
+}
+#fa_menulist :link, #fa_menulist :visited {
+    color: var(--link)!important;
+}
+
+/* Menu bienvenue */
+ul#fa_menulist {
+    margin-top: 10px;
+    width: 300px!important; 
+}
+
+/* Image de l'avatar dans le menu bienvenue */
+#fa_usermenu img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Liste des notifications*/
+ul#notif_list {
+    top: 50px;
+    font-size: var(--sizu1) !important;
+    font-family: var(--font);
+}
+
+/* Lien dans une notification*/
+ul#notif_list a {
+    text-decoration: none !important
+}
+
+/* Notifications non lues */
+#notif_list .unread {
+    background: var(--grey) !important;
+}
+
+/* Lien "voir toutes les notifications" */
+#notif_list .see_all {
+    background: var(--grey) !important;
+    border-radius: 5px;
+    margin: 5px !important;
+}
+
+/* Conteneur de l'avatar toolbar */
+.fa_avatar {
+    position: absolute;
+    top: -1px;
+    left: -35px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: var(--border);
+    background: var(--light);
+    display: grid;
+    place-items: center;
+}
+
+/* Image de l'avatar */
+.fa_avatar img {
+    object-fit: cover;
+    object-position: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+}
+
+/* Placement du pop-up de nouvelle notification */
+#fa_toolbar #live_notif {
+    top: 45px;
+    right: 0px!important;
+}
+/* Stylisation du pop-up */
+#fa_toolbar #live_notif .fa_notification { }
+
+/* Lien à l'intérieur du pop-up de notification */
+#live_notif a {
+  color: var(--light)!important;
+}
+
+
+/*BOUTONS CLAIR/SOMBRE */
+/* BOUTON CHANGEMENT DE THEME ---*/
+@media (prefers-color-scheme: dark) {.color-scheme-toggle .dark{display: none}}
+@media (prefers-color-scheme: light) {.color-scheme-toggle .light{display: none}}
+.color-scheme-toggle,
+[data-color-scheme="light"] .color-scheme-toggle .dark,
+[data-color-scheme="dark"] .color-scheme-toggle .light {display: block;width: 100%;}
+
+[data-color-scheme="dark"] .color-scheme-toggle .dark,
+[data-color-scheme="light"] .color-scheme-toggle .light {display: none}
+
+.color-scheme-toggle {
+    background: var(--button);
+    padding: 5px 8px;
+    font-size: 1.25rem;
+    line-height:1.25rem;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--buttonfont);
+}
+
+
+/*MODIFS FORUMACTIF MESSENGER*/
+#FAM a.FAM-page-link, .FAM-page-link { background:var(--lighter); font-size:var(--sizu2);}
+.FAM-chat-icon { visibility: hidden;}
+b.FAM-page-link, strong.FAM-page-link {background:var(--button)}
+.FAM-msg FAM-my-msg blog_comment {border:none!important; padding:3px!important;}
+#FAM-msg {color:var(--text)!important; font-size:var(--sizu2);}
+.FAM-msg { padding: 0px;}
+.FAM-button { background:var(--smsu)!important; color:var(--buttonfont)!important; font-size:var(--sizu1);}
+#FAM a {color:var(--link)!important}
+.FAM-chat { height:50px; background:var(--lighter); color:var(--text); border-bottom:var(--borders); font-size:var(--sizu2)!important;}
+.FAM-chat:hover {background:var(--light);}
+.FAM-chat-title {font-size:var(--sizu2);}
+#FAM-button { background:var(--button)!important; color:var(--buttonfont)!important; border-radius:4px; bottom:10px; right:10px; width:36px; height:31px;}
+#FAM-actions>button {background:var(--lighter); border-left:var(--borders);}
+#FAM-tab-add:hover {color:var(--button)!important;}
+#FAM-tab-add {border:var(--borders);}
+#FAM-actions {border:var(--borders);}
+#FAM { width:350px; height:470px; min-height:470px; border:var(--borders); background:var(--lighter); right:50px; bottom:0px;}
+.FAM-msg-date  { text-transform:uppercase; font-size:var(--sizu1); color:var(--textff);}
+.FAM-msg-avatar { width:40px; height:40px; border:var(--borders);}
+.FAM-msg-avatar img { object-fit: cover; object-position: center;}
+#FAM-msg-container {border-left:var(--borders);}
+.FAM-tab { background: var(--light); border: var(--borders); color:var(--text)!important;}
+.FAM-tab:hover {background:var(--lighter);}
+#FAM-tabs {background:var(--lighter);}
+.FAM-tab.FAM-tab-active { color:var(--text)!important; background: var(--lighter);}
+.FAM-tab.FAM-tab-active:after {background:var(--button)!important;}
+#FAM-toolbar { border:none!important; background:var(--button)!important; color:var(--buttonfont)!important;}
+.FAM-my-msg .FAM-msg-content {background: var(--button)!important; color:var(--buttonfont)!important;}
+.FAM-msg-content {background: var(--smsu)!important; color: var(--text);}
+.FAM-msg-content:before { border-right-color: var(--smsu)!important;}
+.FAM-my-msg .FAM-msg-content:before { border-left-color: var(--button)!important;}
+.FAM-msg-text {font-size:var(--sizu2);}
+.FAM-toolbar-button, .FAM-maintitle {  color:var(--buttonfont)!important;}
