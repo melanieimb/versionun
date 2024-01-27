@@ -56,11 +56,12 @@
 .smsdebutgrid {
   display:grid; 
   grid-gap:10px;
-  grid-template-columns: 70px auto;
+  grid-template-columns: 70px auto 70px;
   align-items: center;}
 .smsdemarre {grid-column:2; text-align:left;}
 .imgdebut {grid-column:1}
-.imgdebut img {
+.imgfin {grid-column:3}
+.imgfin img, .imgdebut img {
   object-fit: cover;
   object-position: center;
   border-radius:50%;
