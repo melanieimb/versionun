@@ -515,6 +515,8 @@ a#fa_menu {display: none !important}
 
 #fa_toolbar #fa_right.notification #notif_list {width:275px;}
 
+#fa_toolbar #fa_right #notif_list li hr {display:none!important;}
+
 /* Affichage du menu bienvenue [ET] liste des notification */
 ul#fa_menulist,
 ul#notif_list {
