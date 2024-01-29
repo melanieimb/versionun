@@ -1623,7 +1623,7 @@ div#tabs li:nth-child(5) { display: none;}
 ul.topics dd.dterm {width:45%;}
 ul.topics dd.dterm, ul.topics dt {padding-left: 60px!important}
 dl.icon {}
-dl.icon img {opacity:0.1}
+dl.icon img {}
 
 .adminlink br {display: none}
 
