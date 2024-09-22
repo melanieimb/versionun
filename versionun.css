@@ -1167,7 +1167,7 @@ color:var(--text);}
 .spoiler_content {margin: 5px 5px 2px;}
 
 /*Balise citation*/
-blockquote, blockquote#blank_quote {
+blockquote#blank_quote {
   background:var(--light);
   color:var(--text);
   margin: 15px !important;
