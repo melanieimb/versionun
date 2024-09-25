@@ -494,7 +494,7 @@
 #fa_welcome {display:none!important;}
 
 /* Lien "notification"*/
-#fa_notifications
+#fa_notifications {opacity:0}
 
 /* liens "bienvenue" et "notification" [AU CLIC] */
 a#fa_menu {display: none !important}
