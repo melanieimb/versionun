@@ -1,0 +1,226 @@
+/*animal crossing*/
+.animalgrid {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.servimg.com/u/f30/17/00/59/62/island10.jpg); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:450px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid img {max-width:100%; max-height:100%;}
+.animalgrid1 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/xAy8KZA.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid2 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/b3DkelK.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid3 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/jYGfGOj.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid4 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/3WgNQlZ.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid5 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/zmJcfzo.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid6 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/WWc8qXR.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid7 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/LwFOhmo.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid8 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/02EWkli.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid9 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/mti7F5b.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid10 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/tIrjNlE.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid11 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/5M0Os6f.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid12 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/iumo3CD.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid13 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/luh45lt.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid14 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/KUO6yep.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.animalgrid15 {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/4Tg96BH.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:420px; 
+  grid-template-columns:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px; 
+  display:grid;}
+.jaehwaisland {
+  opacity:0.9;
+  border-radius:10px;
+  background-image:url(https://i.imgur.com/JSc36IF.png); 
+  padding-top:50px; 
+  padding-bottom:50px; 
+  padding-left:50px; 
+  padding-right:50px; 
+  width:500px; 
+  height:400px; 
+  grid-template-columns:22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px;
+  grid-template-rows:22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px 22px; 
+  display:grid;}
+
+.gridbatiment {display:grid}
+.gridbatiment img {max-width:100%; max-height:100%;}
