@@ -4,6 +4,13 @@
 /*** ------------------------------- ***/
 /*** COMMENTAIRES D'UN BLOG -------- ***/
 
+#blog_comments {
+    border: var(--borders);
+  background:var(--light);
+    width: 55%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
 .commentgrid {
   grid-template-columns: 60px auto 100px;
   display:grid; 
@@ -11,7 +18,7 @@
   padding:10px;
   margin:10px;
   align-items:center; 
-  border:var(--border);
+  background:var(--lighter);
   grid-gap:5px;}
 
 .blog_comment {
