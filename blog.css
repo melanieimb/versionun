@@ -19,6 +19,7 @@
   margin:10px;
   align-items:center; 
   background:var(--lighter);
+  border-radius:5px;
   grid-gap:5px;}
 
 .blog_comment {
