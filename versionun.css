@@ -1,6 +1,7 @@
 fieldset dt {color:var(--aaa); font-weight:bold; text-transform:uppercase; font-size:var(--sizu1); letter-spacing:1px;}
 
 .mp_infos {text-align:justify;}
+.message_content {text-align:justify;}
 
 .topic-type {font-style:italic; font-weight:bold; color:var(--ccc);}
 a.topictitle {color:var(--aaa)!important;}
