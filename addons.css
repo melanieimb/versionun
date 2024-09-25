@@ -496,8 +496,6 @@
 /* Lien "notification"*/
 #fa_notifications
 
-fa_notification {opacity:0}
-
 /* liens "bienvenue" et "notification" [AU CLIC] */
 a#fa_menu {display: none !important}
 #fa_right.welcome #fa_menu #fa_welcome,
@@ -590,19 +588,6 @@ ul#notif_list a {
     width: 22px;
     height: 22px;
     border-radius: 3px;
-}
-
-/* Placement du pop-up de nouvelle notification */
-#fa_toolbar #live_notif {
-    top: 45px;
-    right: 0px!important;
-}
-/* Stylisation du pop-up */
-#fa_toolbar #live_notif .fa_notification { opacity:0 }
-
-/* Lien à l'intérieur du pop-up de notification */
-#live_notif a {
-  color: var(--light)!important;
 }
 
 
