@@ -1,5 +1,15 @@
 fieldset dt {color:var(--aaa); font-weight:bold; text-transform:uppercase; font-size:var(--sizu1); letter-spacing:1px;}
 
+.topic-type {font-style:italic; font-weight:bold; color:var(--ccc);}
+a.topictitle {color:var(--aaa)!important;}
+
+.postbody .content {
+    text-align: justify;
+  font-size:var(--sizu2)!important;
+}
+.panel p {font-size:var(--sizu2)!important;}
+.post_avatar img {max-width:200px; max-height:320px!important;}
+
 .post_userinfo::-webkit-scrollbar {
   display: none;
 }
