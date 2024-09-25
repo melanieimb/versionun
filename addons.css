@@ -598,7 +598,7 @@ ul#notif_list a {
     right: 0px!important;
 }
 /* Stylisation du pop-up */
-#fa_toolbar #live_notif .fa_notification { }
+#fa_toolbar #live_notif .fa_notification { opacity:0 }
 
 /* Lien à l'intérieur du pop-up de notification */
 #live_notif a {
