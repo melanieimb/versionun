@@ -619,7 +619,7 @@ a.mainmenu img {
 .forums {}
 
 .forum_row {
-    background:var(--lighter);
+    background:var(--light);
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
@@ -631,7 +631,7 @@ a.mainmenu img {
 .forum_row:last-child {margin-bottom: 0}
 
 .forum_row > div {
-    background: var(--lighter);
+    background: var(--light);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -667,7 +667,7 @@ img.forum-img {
 .forum_desc {
   text-align:justify;
   font-size:var(--sizu2);
-  background:var(--light);
+  background:var(--lighter);
   box-shadow: var(--shadow);
   height: 60px;
   overflow: auto;
