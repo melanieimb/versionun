@@ -394,23 +394,23 @@ span.specials_links:empty {
 .pagination {
   float:none!important;
     text-align:right;
-  height:20px;
+  height:15px;
 }
 
 /*lien unique vers les pages numérotées*/
 .pagination span a {
-    background: var(--lighter) !important;
+    background: var(--light) !important;
     border: none !important;
     color: var(--link) !important;
     border-radius: 3px;
-    font-size: var(--sizu2) !important;
+    font-size: var(--sizu1) !important;
     margin: 0 2px;
     padding: 1px 4px;
 }
 
 /*survol des liens uniques des pages*/
 .pagination span a:hover {
-    background: var(--lighter) !important;
+    background: var(--light) !important;
 }
 
 /*lien actif : page sur laquelle vous vous trouvez */
