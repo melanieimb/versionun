@@ -109,7 +109,7 @@ body {
     background: var(--light);
     background-image: none !important;
     border: var(--border);
-    border-radius:20px;
+    border-radius:10px;
     font-size:var(--sizu2)!important;
     padding-bottom:10px;
     margin-bottom: 10px !important;
