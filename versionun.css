@@ -604,7 +604,7 @@ a.mainmenu img {
  * Il est conseillé de garder le selecteur ".cate_title h2"
  */
 .cate_title h2 {
-  background:var(--lighter);
+  background:var(--light);
   display: block !important;
   text-align: center;
   font-family:var(--font1);
@@ -618,6 +618,7 @@ a.mainmenu img {
 .forums {}
 
 .forum_row {
+    background:var(--lighter);
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
@@ -629,7 +630,7 @@ a.mainmenu img {
 .forum_row:last-child {margin-bottom: 0}
 
 .forum_row > div {
-    background: var(--light);
+    background: var(--lighter);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -665,7 +666,7 @@ img.forum-img {
 .forum_desc {
   text-align:justify;
   font-size:var(--sizu2);
-  background:var(--lighter);
+  background:var(--light);
   box-shadow: var(--shadow);
   height: 60px;
   overflow: auto;
