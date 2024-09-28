@@ -353,7 +353,6 @@ p {font-size: var(--sizu2)}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    clear: both;
 }
 
 /* Mise en valeur d'un lien spécial */
