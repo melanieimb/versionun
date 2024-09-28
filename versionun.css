@@ -755,9 +755,11 @@ div.foruminform {
 /* Chaîne de navigation et pagination
  * (réutilisé dans l'affichage d'un sujet (viewtopic_body)) */
 .navigation_links {
-    border:var(--borders);
-    border-radius:10px;              
+    border:var(--border);
+    background:var(--light);
+    border-radius:5px;              
     padding:10px;
+    margin-bottom:20px;
     justify-content: space-between;
 }
 
