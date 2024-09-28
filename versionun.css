@@ -36,8 +36,6 @@ a:active {color:var(--link)}
 
 .jqmWindow {background:var(--ligher);}
 .boutonicone {
-    width: 30px;
-    height: 30px;
     font-size: 30px;
 }
 form {
