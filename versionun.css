@@ -754,6 +754,8 @@ div.foruminform {
  * (réutilisé dans l'affichage d'un sujet (viewtopic_body)) */
 .navigation_links {
     border:var(--border);
+    background:var(--lighter);
+    border-radius:10px;              
     padding:10px;
     justify-content: space-between;
 }
