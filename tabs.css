@@ -1,0 +1,41 @@
+/* .systab .tab => les onglet */
+.systab .tab {
+  margin-right: 5px;
+  color: var(--blanc);
+  background: var(--patink);
+  border: var(--dborder);
+  width:25px;
+  height:25px;
+  cursor: pointer;
+  border-radius:50%;
+  padding-left:3px;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-right:3px;
+}
+/* .systab .tab:hover => les onglets survolés */
+.systab .tab:hover {
+  background: var(--aaa);
+  color: var(--blanc);
+  border-color: var(--aaa);
+}
+/* .systab .tab.selected => les onglets sélectionnés */
+.systab .tab.selected{
+  color: var(--blanc);
+  background: var(--aaa);
+}
+/* .systab .contents => les conteneurs des contenus associés aux onglets  */
+.systab .contents {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size:var(--sizu3)!important;
+}
+/* style des onglets si ils sont à gauche ou à droite */
+.systab.s_float .tab,.systab.s_float .tab {
+  display: block;
+  margin: 5px;
+}
+/* flottement des conteneurs si les onglets sont à gauche où à droite */
+.systab.s_float .tabs,.systab.s_float .contents {
+  float: left;
+}
