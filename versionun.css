@@ -346,10 +346,10 @@ p {font-size: var(--sizu2)}
 .links_bar {
   text-transform:uppercase;
   font-size:var(--sizu1)!important;
-    min-height: 38px;
+    min-height: 28px;
     border-radius: 5px;
-    margin: 10px 0;
-    padding: 8px;
+    margin: 0px 0;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
