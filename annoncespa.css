@@ -1,0 +1,46 @@
+.annoncespa {
+  display:grid;  
+  grid-template-rows:auto; 
+  grid-template-columns: 385px 385px;
+    grid-column-gap: 10px; 
+  width:100%;}
+.annoncespapre {
+  background:var(--light); border:var(--border); border-radius:5px; padding:10px; grid-row:1; grid-column:1;}
+.annoncespasce {
+  background:var(--light); border:var(--border); border-radius:5px; padding:10px; grid-row:1; grid-column:2;}
+.annoncespatitre {
+  display:flex;
+  align-items: center;
+  line-height: var(--sizu5); 
+  letter-spacing: 3px; 
+  padding-left: 2px; 
+  padding-right: 2px; 
+  background: var(--boutannonce); 
+  width: 100%; 
+  height:100%;
+  border-radius: 2px; 
+  margin-bottom: 4px;
+  box-shadow: var(--shadow); 
+  font-size: var(--sizu5) !important; 
+  color: var(--blanc) !important;
+  transition: 0.7s;}
+.annoncespasuj {
+  background:var(--light); padding:5px; border:var(--border); font-size:9px; transition: 0.7s; margin-bottom:5px;}
+.annoncespasuj:hover {background:var(--lighter); transition: 0.7s;}
+.annoncespatitre:hover {
+  background:var(--patink2);
+  transition: 0.7s;}
+.annoncesscroll {max-height:50px; overflow:auto;}
+.bannonce {
+  border:var(--bordbannonce); 
+  width:80px; 
+  height:18px; 
+  background:var(--bannonce); 
+  border-radius:2px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:var(--sizu7);
+  line-height:18px;
+  transition: 0.7s;
+color:white;}
+.bannonce:hover {background:var(--bannonceho); transition: 0.7s;}
