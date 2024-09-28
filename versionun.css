@@ -172,7 +172,7 @@ form[name=form_login] .content {
 /* Utilisé pour des titres de pages */
 h1, h1.page-title {
   color: var(--jolititre);
-  margin: 0px 0 -10px;
+  margin: 0px 0 0px;
   font-weight: 700 !important;
   font-family:var(--font1);
   font-size:var(--sizu6)!important;
