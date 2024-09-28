@@ -611,7 +611,26 @@ ul#notif_list a {
     border-radius: 5px;
     color: var(--buttonfont);
 }
+/* Placement du pop-up de nouvelle notification */
+#fa_toolbar #live_notif {
+    top: 65px!important;
+    right: 35px!important;
+  width:100px;
+}
+/* Stylisation du pop-up */
+#fa_toolbar #live_notif .fa_notification { 
+  border:var(--borders);
+  background:var(--light);
+  border-radius:5px;
+  color:var(--text);
+}
+#fa_toolbar #live_notif .fa_notification .content {color:var(--text)!important;}
 
+/* Lien à l'intérieur du pop-up de notification */
+#live_notif a {
+  color: var(--light)!important;
+}
+#fa_toolbar #live_notif .fa_notification a {color:var(--text);}
 
 /*MODIFS FORUMACTIF MESSENGER*/
 #FAM a.FAM-page-link, .FAM-page-link { background:var(--lighter); font-size:var(--sizu2);}
