@@ -620,7 +620,8 @@ a.mainmenu img {
 
 .forum_row {
     background:var(--light);
-    border:var(--border);
+    border:1px solid (--lighter);
+    border-radius:5px;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
@@ -640,7 +641,7 @@ a.mainmenu img {
   font-size:var(--sizu1)!important;
 }
 
-.top_row {border-radius: 5px 5px 0 0; border:var(--border);}
+.top_row {border-radius: 5px 5px 0 0;}
 
 a.forumtitle {
   font-size:var(--sizu1);
