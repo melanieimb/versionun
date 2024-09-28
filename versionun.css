@@ -106,14 +106,14 @@ body {
  * Pour les repérer, n'hésitez pas à utiliser l'outil d'inspecteur Web */
 
 .forabg, .forumbg {
-    background: var(--lighter);
+    background: var(--light);
     background-image: none !important;
-    border: none;
+    border: var(--border);
+    border-radius:20px;
     font-size:var(--sizu2)!important;
-    padding: 0px;
+    padding-bottom:10px;
     margin-bottom: 10px !important;
   margin-top:40px!important;
-  border-top:var(--border);
 }
 
 .row, .row1, .row2 {
