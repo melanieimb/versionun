@@ -620,6 +620,7 @@ a.mainmenu img {
 
 .forum_row {
     background:var(--light);
+    border:var(--border);
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
