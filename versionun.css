@@ -421,6 +421,7 @@ span.specials_links:empty {
     border: none !important;
     margin: 0 2px;
     padding: 1px 4px;
+    color:var(--aaa)!important;
 }
 
 
