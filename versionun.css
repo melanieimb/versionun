@@ -640,7 +640,7 @@ a.mainmenu img {
   font-size:var(--sizu1)!important;
 }
 
-.top_row {border-radius: 5px 5px 0 0;}
+.top_row {border-radius: 5px 5px 0 0; border:var(--border);}
 
 a.forumtitle {
   font-size:var(--sizu1);
