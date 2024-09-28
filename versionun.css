@@ -767,6 +767,7 @@ div.foruminform {
 }
 
 .navigation_chain a {
+    text-transform:uppercase;
     font-size: var(--sizu1);
     /*rétablit le font-size: 0*/
     margin-right: 8px;
