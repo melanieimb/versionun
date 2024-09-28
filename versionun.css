@@ -400,7 +400,7 @@ span.specials_links:empty {
 
 /*lien unique vers les pages numérotées*/
 .pagination span a {
-    background: var(--light) !important;
+    background: var(--lighter) !important;
     border: none !important;
     color: var(--link) !important;
     border-radius: 3px;
@@ -411,7 +411,7 @@ span.specials_links:empty {
 
 /*survol des liens uniques des pages*/
 .pagination span a:hover {
-    background: var(--light) !important;
+    background: var(--lighter) !important;
 }
 
 /*lien actif : page sur laquelle vous vous trouvez */
