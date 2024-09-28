@@ -104,10 +104,9 @@ body {
  * Pour les repérer, n'hésitez pas à utiliser l'outil d'inspecteur Web */
 
 .forabg, .forumbg {
-    background: var(--light);
+    background: var(--lighter);
     background-image: none !important;
-    border: var(--border);
-    border-radius:10px;
+    border-top: var(--borders);
     font-size:var(--sizu2)!important;
     padding-bottom:10px;
     margin-bottom: 10px !important;
@@ -601,7 +600,7 @@ a.mainmenu img {
  * Il est conseillé de garder le selecteur ".cate_title h2"
  */
 .cate_title h2 {
-  background:var(--light);
+  background:var(--lighter);
   display: block !important;
   text-align: center;
   font-family:var(--font1);
