@@ -771,7 +771,7 @@ div.foruminform {
 }
 
 .navigation_chain a {
-    font-size: var(--sizu2);
+    font-size: var(--sizu1);
     /*rétablit le font-size: 0*/
     margin-right: 8px;
 }
