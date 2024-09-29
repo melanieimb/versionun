@@ -17,7 +17,7 @@
 .systab .tab:hover {
   background: var(--aaa);
   color: var(--blanc);
-  border-color: var(--aaa);
+  border-color: var(--eee);
 }
 /* .systab .tab.selected => les onglets sélectionnés */
 .systab .tab.selected{
