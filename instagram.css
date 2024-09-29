@@ -238,12 +238,12 @@
   align-items: center; 
   justify-items: center;}
 .instastorymessage {
-  border:1px solid var(--blanc);
+  border:1px solid var(--lighter);
   width:280px; 
   height:30px; 
   border-radius:20px; 
   opacity:0.8; 
-  color:var(--blanc); 
+  color:var(--lighter); 
   line-height:30px; 
   text-align:justify; 
   padding-left:10px; 
