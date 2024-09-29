@@ -163,3 +163,88 @@
 .instalike3 {grid-column:3; grid-row:1; }
 .instalike4 {grid-column:4; grid-row:1; }
 .instalike1:hover, .instalike2:hover, .instalike3:hover, .instalike4:hover {opacity:0.8; transition:0.7s;}
+
+/*STORY INSTAGRAM*/
+.containinstastory {
+  position: relative;
+  width:350px;}
+.imginstastory {
+  width:350px; 
+  height:auto;
+  border-radius:5px;
+  object-fit: cover; 
+  object-position: center;}
+.instastorycadre {
+  position: absolute;
+  width:350px;
+  height:auto;
+  top: 4%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);}
+.textinstastory {
+  padding:10px;
+  height:auto;
+  width:350px;
+  overflow:auto;
+  font-size: var(--sizu2);}
+.instastorynumber {
+  display:flex; 
+  justify-content: space-between;}
+.instastorybar {
+  width:160px; 
+  height:3px; 
+  background:var(--lighter); 
+  border-radius:5px; 
+  opacity:0.8}
+.instastorybarr {
+  width:160px; 
+  height:3px; 
+  background:var(--light); 
+  border-radius:5px; 
+  opacity:0.4;}
+.instastorygridinfo {
+  padding-top:5px; 
+  display:grid; 
+  grid-template-columns: 25px 80px 30px 170px 25px; 
+  grid-template-rows: 25px; 
+  align-items: center;}
+.instastoryimgprofil {
+  height:25px; 
+  width:25px; 
+  border-radius:50%; 
+  object-fit: cover; 
+  object-position: center;}
+.instastorypseudo {
+  font-weight:bold; 
+  color:var(--blanc);}
+.instastorytemps {
+  grid-column:3; 
+  opacity:0.6; 
+  color:var(--blanc);}
+.instastoryellips {
+  grid-column:5; 
+  color:var(--blanc); 
+  font-size:var(--sizu8);}
+.instastorymessagegrid {
+  position:absolute; 
+  bottom:3%; 
+  left:2%; 
+  display:grid; 
+  grid-template-columns:280px 30px 30px; 
+  font-size:var(--sizu5); 
+  color:var(--blanc); 
+  align-items: center; 
+  justify-items: center;}
+.instastorymessage {
+  border:1px solid var(--blanc);
+  width:280px; 
+  height:30px; 
+  border-radius:20px; 
+  opacity:0.8; 
+  color:var(--blanc); 
+  line-height:30px; 
+  text-align:justify; 
+  padding-left:10px; 
+  font-size:var(--sizu2);}
