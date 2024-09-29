@@ -234,7 +234,7 @@
   display:grid; 
   grid-template-columns:280px 30px 30px; 
   font-size:var(--sizu5); 
-  color:var(--blanc); 
+  color:var(--lighter); 
   align-items: center; 
   justify-items: center;}
 .instastorymessage {
