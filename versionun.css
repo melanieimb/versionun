@@ -1373,57 +1373,7 @@ font-size:0.55rem;}
 .profillink {display: inline-block;}
 .profillink img {height:15px; margin:4px;}
        
-/*** ------------------------------- ***/
-/*** PROFILS SIMPLIFIÉS DES TAGS ---- ***/
 
-/* Supression de la flèche peu esthétique*/
-.tooltipster-arrow {display: none !important}
-
-.tooltipster-default {border-radius:10px;}
-
-.tooltipster-content {
-  border-radius:10px;
-  border:var(--border);
-  background:var(--lighter);
-  color:var(--text);
-}
-
-.preview_content {
-  font-size:var(--sizu2);
-  display: flex; 
-  background:var(--lighter);}
-
-.preview_avatar img {
-    object-fit: cover;
-    object-position: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-.preview_infos {
-    width: 100%;
-    padding-top: 3px
-}
-
-.preview_pseudo, .preview_pseudo strong {
- font-size: 1rem !important;
-  text-transform:uppercase;
-  display: block;
- font-family: var(--font1);
- text-align: center;
-}
-
-.preview_contacts {
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
-}
-
-.preview_contacts a {margin-left: 5px}
-
-.tooltipster-arrow {display: none}
 
 
 
