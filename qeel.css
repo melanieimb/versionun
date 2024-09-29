@@ -51,8 +51,8 @@
   text-transform:uppercase; 
   font-size:var(--sizu1);
   color:var(--blanc);}
-.messagestat {grid-row:1; grid-column:2;  background: linear-gradient(0.25turn, #D8ADAD, #D1899E); }
-.membrestat {grid-row:1; grid-column:1;  background: linear-gradient(0.25turn, #D1899E, #D8ADAD); }
+.messagestat {grid-row:1; grid-column:2;  background: linear-gradient(0.25turn, #CBA26C, #D19967); }
+.membrestat {grid-row:1; grid-column:1;  background: linear-gradient(0.25turn, #D19967, #CBA26C); }
 .qeeltotal {grid-row:2; grid-column:3;}
 .qeelliens {grid-row:2/6; grid-column:2}
 .qeelonline {grid-row:4/6; grid-column:1}
