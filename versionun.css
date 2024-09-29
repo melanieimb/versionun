@@ -521,6 +521,7 @@ background-size: cover;}
   position:fixed;
   z-index: 100;
   width:-webkit-fill-available;
+    width:100%;
   top:-10px;
     background: var(--lighter)!important;
     border: var(--borders);
