@@ -754,7 +754,7 @@ div.foruminform {
     border:var(--border);
     background:var(--light);
     border-radius:5px;              
-    padding:10px;
+    padding:10px 20px 20px 20px;
     margin-bottom:20px;
     justify-content: space-between;
 }
