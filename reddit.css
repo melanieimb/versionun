@@ -45,7 +45,7 @@
   justify-items: start;
   grid-template-columns: 30px 115px 150px 25px;}
 
-.redditpost {text-align:justify; font-size:var(--sizu1);}
+.redditpost {text-align:justify; font-size:var(--sizu2);}
 
 .redditseparator {
   width:100%; 
