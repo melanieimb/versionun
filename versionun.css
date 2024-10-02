@@ -1028,6 +1028,8 @@ ul.profile-icons li:hover {
   text-align:justify;
 }
 p.fa_like_list {font-size:var(--sizu1)}
+p.fa_dislike_list {font-size:var(--sizu1)}
+
 .fa_like_list, .fa_dislike_list, .option_voters_list {
   font-size:var(--sizu1);
   background:var(--light);
