@@ -541,8 +541,9 @@ font-size:var(--sizu1);
 
 /* Suprresion des liens peu utilisé en les identifiant par leur numéro d'ordre*/
 .navbar li:nth-child(2), /*calendrier*/
-.navbar li:nth-child(3), /*faq*/
-.navbar li:nth-child(4) /*faq*/
+.navbar li:nth-child(3), /*images*/
+.navbar li:nth-child(4), /*faq*/
+.navbar li:nth-child(5) /*rechercher*/
     {
     display: none !important
 }
