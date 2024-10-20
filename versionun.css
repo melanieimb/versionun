@@ -104,7 +104,7 @@ body {
  * Pour les repérer, n'hésitez pas à utiliser l'outil d'inspecteur Web */
 
 .forabg, .forumbg {
-    background: var(--lighter);
+    background: transparent;
     background-image: none !important;
     border-top: var(--borders);
     font-size:var(--sizu2)!important;
