@@ -602,7 +602,7 @@ a.mainmenu img {
  * Il est conseillé de garder le selecteur ".cate_title h2"
  */
 .cate_title h2 {
-  background:var(--lighter);
+  background:transparent;
   display: block !important;
   text-align: center;
   font-family:var(--font1);
